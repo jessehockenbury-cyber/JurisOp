@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Notice | JurisOps Consulting</title>
+  <meta name="description" content="Privacy Notice and data handling practices of JurisOps Consulting LLC. Learn how we collect, protect, and manage your personal and business information.">
+  <meta name="author" content="JurisOps Consulting LLC">
+  <link rel="canonical" href="https://jurisopsconsulting.com/privacy">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jurisopsconsulting.com/privacy">
+  <meta property="og:title" content="Privacy Notice | JurisOps Consulting">
+  <meta property="og:description" content="Privacy Notice and data governance policies of JurisOps Consulting LLC.">
+  <meta property="og:image" content="https://jurisopsconsulting.com/images/og-jurisops.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ==========================================
+       TECHNICAL SEO: BREADCRUMB SCHEMA
+       ========================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://jurisopsconsulting.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Privacy Notice",
+        "item": "https://jurisopsconsulting.com/privacy"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-dark: #080B10;
+      --surface-card: #0F1622;
+      --surface-subtle: #162030;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-highlight: rgba(255, 255, 255, 0.16);
+      --text-primary: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+      --accent-gold: #C5A880;
+      --accent-gold-light: #DFCAAB;
+      --accent-blue: #38BDF8;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-serif: 'Instrument Serif', Georgia, serif;
+      --container-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 11, 16, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      font-size: 1.25rem;
+    }
+
+    .logo-mark {
+      width: 28px;
+      height: 28px;
+      border: 1.5px solid var(--accent-gold);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-gold);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      align-items: center;
+      font-size: 0.925rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--text-primary);
+    }
+
+    .btn-nav {
+      background: var(--text-primary);
+      color: var(--bg-dark) !important;
+      padding: 9px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .btn-nav:hover {
+      background: #E2E8F0;
+      transform: translateY(-1px);
+    }
+
+    /* PAGE HERO */
+    .privacy-hero {
+      padding: 80px 0 40px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      margin-bottom: 24px;
+      align-items: center;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--text-muted);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface-subtle);
+      border: 1px solid var(--border-subtle);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--accent-gold);
+      margin-bottom: 20px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .page-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 4.5vw, 3.8rem);
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .meta-date {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    /* CONTENT LAYOUT */
+    .content-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 60px;
+      align-items: start;
+      padding-bottom: 90px;
+    }
+
+    /* SIDEBAR TOC */
+    .toc-sticky {
+      position: sticky;
+      top: 104px;
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .toc-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .toc-list a:hover {
+      color: var(--text-primary);
+    }
+
+    /* LEGAL BODY PROSE */
+    .legal-body {
+      color: var(--text-muted);
+      font-size: 0.975rem;
+      line-height: 1.75;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    .legal-section {
+      scroll-margin-top: 100px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 36px;
+    }
+
+    .legal-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .legal-heading {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+
+    .legal-subheading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 20px 0 10px;
+    }
+
+    .legal-body p {
+      margin-bottom: 16px;
+    }
+
+    .legal-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-body ul {
+      margin: 12px 0 16px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .legal-body li strong {
+      color: var(--text-primary);
+    }
+
+    /* HIGHLIGHT NOTICE BOX */
+    .notice-box {
+      background: rgba(197, 168, 128, 0.05);
+      border-left: 3px solid var(--accent-gold);
+      border-radius: 0 8px 8px 0;
+      padding: 18px 22px;
+      margin: 20px 0;
+      font-size: 0.925rem;
+      color: var(--text-primary);
+    }
+
+    .notice-box strong {
+      color: var(--accent-gold-light);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 60px 0 40px;
+      font-size: 0.875rem;
+      color: var(--text-dim);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+
+    .footer-col h5 {
+      color: var(--text-primary);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a:hover {
+      color: var(--text-primary);
+    }
+
+    .disclaimer-bar {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 24px;
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: var(--text-dim);
+    }
+
+    @media (max-width: 860px) {
+      .content-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .toc-sticky {
+        display: none;
+      }
+      .nav-links {
+        display: none;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="/" class="logo" aria-label="JurisOps Consulting Homepage">
+        <span class="logo-mark">J</span>
+        <span>JurisOps<span style="color: var(--accent-gold);">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/founders.html" style="color: var(--text-primary);">Startups &amp; Founders</a></li>
+        <li><a href="/legal-operations.html">Legal Operations</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="https://www.linkedin.com/in/jessehockenbury/recent-activity/articles/" target="_blank" rel="noopener noreferrer">Insights &rarr;</a></li>
+        <li><a href="/contact.html" class="btn-nav">Let's Talk</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="privacy-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a> <span>/</span>
+          <span style="color: var(--text-muted);">Privacy Notice</span>
+        </nav>
+        <div class="badge">Legal Notice &amp; Data Governance</div>
+        <h1 class="page-title">Privacy Notice</h1>
+        <span class="meta-date">Last Updated: September 2026 • JurisOps Consulting LLC</span>
+      </div>
+    </section>
+
+    <div class="container content-layout">
+      
+      <!-- STICKY TABLE OF CONTENTS -->
+      <aside class="toc-sticky" aria-label="Table of Contents">
+        <div class="toc-title">On This Page</div>
+        <ul class="toc-list">
+          <li><a href="#overview">1. Scope &amp; Overview</a></li>
+          <li><a href="#information-we-collect">2. Information We Collect</a></li>
+          <li><a href="#intake-confidentiality">3. Prospective Client Inquiries</a></li>
+          <li><a href="#how-we-use">4. How We Use Data</a></li>
+          <li><a href="#sharing-disclosure">5. Sharing &amp; Disclosure</a></li>
+          <li><a href="#security-retention">6. Security &amp; Retention</a></li>
+          <li><a href="#your-rights">7. Your Privacy Rights</a></li>
+          <li><a href="#contact">8. Contact Details</a></li>
+        </ul>
+      </aside>
+
+      <!-- MAIN PRIVACY CONTENT -->
+      <article class="legal-body">
+
+        <!-- SECTION 1 -->
+        <section class="legal-section" id="overview">
+          <h2 class="legal-heading">1. Scope &amp; Overview</h2>
+          <p>
+            This Privacy Notice explains how <strong>JurisOps Consulting LLC</strong> ("JurisOps," "we," "us," or "our") collects, uses, protects, and discloses personal information when you visit our website (<code>jurisopsconsulting.com</code>), submit an online inquiry, or communicate with us regarding strategic legal consulting, operational advisory, or startup architecture services.
+          </p>
+          <p>
+            By accessing our website, using our interactive contact triage portals, or communicating with us, you acknowledge the terms described in this Privacy Notice. If you do not agree with these practices, please refrain from using our digital properties.
+          </p>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section class="legal-section" id="information-we-collect">
+          <h2 class="legal-heading">2. Information We Collect</h2>
+          <p>We collect information in three primary ways: directly from your submissions, automatically via website interactions, and through professional third-party networks.</p>
+
+          <h3 class="legal-subheading">A. Information You Provide Voluntarily</h3>
+          <ul>
+            <li><strong>Contact Details:</strong> Your first and last name, business email address, phone number, and physical mailing address.</li>
+            <li><strong>Business &amp; Operational Metadata:</strong> Company name, entity type, jurisdiction (e.g., Kentucky, Ohio, Delaware), founding stage, and headcount.</li>
+            <li><strong>Inquiry Context:</strong> Details you provide regarding your operational pain points, contract workflows, technology questions, or startup launch goals.</li>
+          </ul>
+
+          <h3 class="legal-subheading">B. Automatically Collected Information</h3>
+          <p>
+            When you navigate our website, our servers and analytics providers may log standard web telemetry, including your IP address, browser type, operating system, referring URLs, pages viewed, time spent on pages, and device identifiers.
+          </p>
+
+          <h3 class="legal-subheading">C. Cookies &amp; Similar Technologies</h3>
+          <p>
+            We use essential and lightweight performance cookies to ensure site functionality, preserve session security, and evaluate general traffic patterns. We do not use intrusive cross-site behavioral tracking cookies, nor do we sell your browsing activity to third-party data brokers.
+          </p>
+        </section>
+
+        <!-- SECTION 3 -->
+        <section class="legal-section" id="intake-confidentiality">
+          <h2 class="legal-heading">3. Prospective Client Inquiries &amp; Legal Privilege</h2>
+          <div class="notice-box">
+            <strong>Critical Legal Notice:</strong> Submitting a contact inquiry, scheduling an exploratory discovery call, or sending initial materials through this website does not create an attorney-client relationship, a fiduciary consulting relationship, or formal legal privilege between you and JurisOps Consulting LLC.
+          </div>
+          <p>
+            A formal professional relationship is established <em>only</em> after we have completed our conflict-check process and both parties have signed a written Engagement Agreement.
+          </p>
+          <p>
+            Please do not transmit sensitive trade secrets, non-public patent disclosures, unredacted corporate records, or highly confidential legal vulnerabilities via unencrypted website webforms. While we treat all prospective business inquiries with professional discretion, information submitted prior to an executed agreement may not be protected by evidentiary privileges.
+          </p>
+        </section>
+
+        <!-- SECTION 4 -->
+        <section class="legal-section" id="how-we-use">
+          <h2 class="legal-heading">4. How We Use Your Information</h2>
+          <p>We use the data we collect solely for legitimate professional and commercial purposes, including:</p>
+          <ul>
+            <li><strong>Responding to Inquiries:</strong> Reviewing your business requirements and scheduling discovery consultations.</li>
+            <li><strong>Delivering Services:</strong> Fulfilling contracted scopes of work, drafting operational playbooks, and structuring corporate formation assets.</li>
+            <li><strong>Conflict Checks &amp; Due Diligence:</strong> Confirming that prospective engagements do not present legal or commercial conflicts of interest.</li>
+            <li><strong>Security &amp; Integrity:</strong> Protecting our website, communication networks, and intellectual property against unauthorized access, spam, or cyber threats.</li>
+            <li><strong>Regulatory Compliance:</strong> Complying with state and federal legal obligations, tax reporting requirements, and corporate recordkeeping mandates.</li>
+          </ul>
+        </section>
+
+        <!-- SECTION 5 -->
+        <section class="legal-section" id="sharing-disclosure">
+          <h2 class="legal-heading">5. Information Sharing &amp; Disclosure</h2>
+          <p>
+            <strong>We do not sell, rent, monetize, or trade your personal or corporate information.</strong> We disclose information only under strict, limited conditions:
+          </p>
+          <ul>
+            <li><strong>Trusted Infrastructure Providers:</strong> We share data with enterprise cloud providers who support our operations (e.g., secure web hosting, corporate email servers, and encrypted intake form processors). These vendors are contractually bound to confidentiality and may only process data on our instruction.</li>
+            <li><strong>Legal Requirements:</strong> If mandated by a valid subpoena, court order, or governmental demand, we may disclose information to the extent legally required.</li>
+            <li><strong>Business Transfers:</strong> In the event of a merger, corporate restructuring, or sale of substantial company assets, client information may be transferred as a commercial asset under binding confidentiality terms.</li>
+          </ul>
+        </section>
+
+        <!-- SECTION 6 -->
+        <section class="legal-section" id="security-retention">
+          <h2 class="legal-heading">6. Data Security &amp; Retention</h2>
+          <p>
+            We implement commercially reasonable administrative, organizational, and physical safeguards designed to protect personal and business information against unauthorized access, loss, or alteration once received on our internal systems.
+          </p>
+          <p>
+            Please note that the electronic transmission of information over public internet protocols carries inherent security limitations. While we endeavor to maintain appropriate safeguards, website-based communications are conducted at your own risk. For sensitive, proprietary, or privileged communications, prospective clients are strongly advised to contact us directly to coordinate secure, encrypted channels pursuant to an executed engagement agreement.
+          </p>
+          <p>
+            We retain personal and business information only for as long as reasonably necessary to fulfill the purposes for which it was gathered, satisfy statutory and tax accounting obligations, resolve disputes, and maintain essential business records.
+          </p>       
+        </section>
+
+        <!-- SECTION 7 -->
+        <section class="legal-section" id="your-rights">
+          <h2 class="legal-heading">7. Your Privacy Rights</h2>
+          <p>
+            Depending on your jurisdiction of residence (including under statutes such as the California Consumer Privacy Act/CPRA, Virginia Consumer Data Protection Act, and other state laws), you may hold specific rights regarding your personal data:
+          </p>
+          <ul>
+            <li><strong>Right to Know &amp; Access:</strong> You may request disclosure of the specific pieces of personal information we have collected about you.</li>
+            <li><strong>Right to Correction:</strong> You may request that we update inaccurate or incomplete information.</li>
+            <li><strong>Right to Deletion:</strong> You may request that we delete personal data we have collected, subject to legal and regulatory retention exceptions.</li>
+            <li><strong>Right to Non-Discrimination:</strong> We will never discriminate against you, deny services, or alter pricing because you exercise any privacy right.</li>
+          </ul>
+          <p>
+            To exercise any of these rights, please submit a verified written request using the contact channels listed below.
+          </p>
+        </section>
+
+        <!-- SECTION 8 -->
+        <section class="legal-section" id="contact">
+          <h2 class="legal-heading">8. Contact Information</h2>
+          <p>
+            If you have questions, comments, or data requests regarding this Privacy Notice or our data governance practices, please reach out directly:
+          </p>
+          <div style="background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 24px; margin-top: 16px;">
+            <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 4px;">JurisOps Consulting LLC</p>
+            <p style="margin-bottom: 4px;">Attn: Privacy &amp; Data Governance</p>
+            <p>Direct Inquiries: <a href="mailto:info@Jurisop.com" style="color: var(--accent-gold); text-decoration: underline;">info@Jurisop.com</a></p>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo" style="margin-bottom: 14px;">
+            <span class="logo-mark">J</span>
+            <span>JurisOps Consulting</span>
+          </div>
+          <p style="color: var(--text-muted); line-height: 1.6; max-width: 380px;">
+            Strategic legal counsel, workflow automation, and venture-grade startup governance for ambitious organizations.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Offerings</h5>
+          <ul class="footer-links">
+            <li><a href="/founders.html">Startup Formation &amp; Governance</a></li>
+            <li><a href="/founders.html#commercial-contracts">Commercial Contracts &amp; Launch Ops</a></li>
+            <li><a href="/legal-operations.html">Legal Operations Advisory</a></li>
+            <li><a href="/legal-operations.html#playbooks">Contract Playbooks &amp; Guidelines</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="/about.html">About Founder</a></li>
+            <li><a href="https://www.linkedin.com/in/jessehockenbury/recent-activity/articles/" target="_blank" rel="noopener noreferrer">Insights &amp; Articles</a></li>
+            <li><a href="contact.html">Inquiry &amp; Intake</a></li>
+            <li><a href="privacy-policy.html">Privacy Notice</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="disclaimer-bar">
+        <p>
+          &copy; 2026 JurisOps Consulting LLC. All rights reserved. | 
+          <strong>Disclaimer:</strong> JurisOps Consulting provides business strategy, operational consulting, and transactional legal counsel. Formal legal counsel and document drafting are provided pursuant to an executed written engagement agreement. Litigation and court advocacy services are not offered.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

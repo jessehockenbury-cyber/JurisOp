@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JurisOps Consulting | Strategic Legal Counsel, Operations & Startup Architecture</title>
+  <meta name="description" content="JurisOps Consulting bridges legal counsel, business operations, and technology systems. Founded by Jesse Hockenbury to help early-stage ventures launch clean and growing companies scale efficiently.">
+  <meta name="author" content="Jesse Hockenbury">
+  <link rel="canonical" href="https://jurisopsconsulting.com/">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jurisopsconsulting.com/">
+  <meta property="og:title" content="JurisOps Consulting | Startup Architecture & Legal Operations">
+  <meta property="og:description" content="Tailored legal documentation and formation for founders. Workflow engineering and operations for corporate teams.">
+  <meta property="og:image" content="https://jurisopsconsulting.com/images/og-jurisops.jpg">
+
+  <!-- Inter & Instrument Serif Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ==========================================
+       TECHNICAL SEO: SCHEMA.ORG GRAPH
+       ========================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://jurisopsconsulting.com/#website",
+        "url": "https://jurisopsconsulting.com/",
+        "name": "JurisOps Consulting",
+        "publisher": {
+          "@id": "https://jurisopsconsulting.com/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://jurisopsconsulting.com/#organization",
+        "name": "JurisOps Consulting",
+        "url": "https://jurisopsconsulting.com/",
+        "logo": "https://jurisopsconsulting.com/images/logo.png",
+        "founder": {
+          "@id": "https://jurisopsconsulting.com/about/#founder"
+        },
+        "description": "Strategic advisory firm delivering startup legal architecture, entity formation, governance drafting, and legal operations engineering.",
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Cincinnati Metropolitan Area"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Northern Kentucky"
+          },
+          {
+            "@type": "Country",
+            "name": "United States"
+          }
+        ],
+        "knowsAbout": [
+          "Strategic Legal Counsel",
+          "Startup Formation",
+          "Corporate Governance & Drafting",
+          "Legal Operations",
+          "Workflow Automation"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://jurisopsconsulting.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "I am an early-stage founder. Is JurisOps a fit for where I am right now?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We specifically partner with pre-seed, bootstrapped, and scaling founders to build an institutional-grade foundation early on. Rather than having to untangle messy equity splits, informal founder handshakes, or missing IP assignments later during due diligence, we ensure your entity and governing agreements are drafted properly from the start with accessible, practical scoping."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can JurisOps draft legal documents and provide legal advice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Unlike automated form-generation platforms, JurisOps provides strategic counsel and bespoke legal drafting—including customized operating agreements, bylaws, founder equity vesting, IP assignment agreements, and commercial contracts under a tailored engagement agreement. We do not provide courtroom litigation, allowing us to stay focused on transactional strategy, risk mitigation, and commercial execution."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why work with JurisOps instead of automated filing services like Stripe Atlas or LegalZoom?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Automated platforms file basic paperwork and hand you generic boilerplate forms that often fail when co-founder disputes or investor diligence arise. JurisOps offers strategic, customized counsel: we guide you on entity type and jurisdiction (KY, OH, DE), draft tailored governance terms that reflect your true business deal, protect your intellectual property, and configure your banking and compliance infrastructure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does your pricing work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We believe in accessible, predictable, and transparent pricing without the surprises of open-ended billable hours. Depending on your needs, we offer cost-effective project scopes, phased formation packages, or flexible advisory retainers designed to align with early-stage budgets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I have to be located in the Cincinnati or Northern Kentucky area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. While our headquarters are in the Greater Cincinnati and Northern Kentucky corridor, our startup structuring, operational playbooks, and systems implementations support founders and corporate clients across the United States."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!--<script>
+    {
+        "@type": "Person",
+        "@id": "https://jurisopsconsulting.com/about/#founder",
+        "name": "Jesse Hockenbury",
+        "jobTitle": "Founder & Managing Director",
+        "url": "https://jurisopsconsulting.com/about/",
+        "image": "https://jurisopsconsulting.com/images/jesse-hockenbury-headshot.jpg",
+        "worksFor": {
+          "@id": "https://jurisopsconsulting.com/#organization"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/jessehockenbury",
+          "https://www.crunchbase.com/person/jesse-hockenbury"
+        ]
+      },
+  </script>-->
+
+  <style>
+    :root {
+      --bg-dark: #080B10;
+      --surface-card: #0F1622;
+      --surface-subtle: #162030;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-highlight: rgba(255, 255, 255, 0.16);
+      --text-primary: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+      --accent-gold: #C5A880;
+      --accent-gold-light: #DFCAAB;
+      --accent-blue: #38BDF8;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-serif: 'Instrument Serif', Georgia, serif;
+      --container-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 11, 16, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      font-size: 1.25rem;
+    }
+
+    .logo-mark {
+      width: 28px;
+      height: 28px;
+      border: 1.5px solid var(--accent-gold);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-gold);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      align-items: center;
+      font-size: 0.925rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--text-primary);
+    }
+
+    .btn-nav {
+      background: var(--text-primary);
+      color: var(--bg-dark) !important;
+      padding: 9px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .btn-nav:hover {
+      background: #E2E8F0;
+      transform: translateY(-1px);
+    }
+
+    /* HERO */
+    .hero {
+      padding: 110px 0 80px;
+      position: relative;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface-subtle);
+      border: 1px solid var(--border-subtle);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--accent-gold);
+      margin-bottom: 24px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-gold);
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.85rem, 5.2vw, 4.5rem);
+      font-weight: 400;
+      line-height: 1.12;
+      letter-spacing: -0.01em;
+      margin-bottom: 24px;
+      max-width: 950px;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--accent-gold-light);
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .btn-primary {
+      background: var(--text-primary);
+      color: var(--bg-dark);
+      padding: 14px 26px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background: #E2E8F0;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid var(--border-highlight);
+      padding: 14px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background: var(--surface-subtle);
+    }
+
+    /* AUDIENCE DUAL TRACK */
+    .audience-tracks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 36px;
+    }
+
+    .track-pill {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 18px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .track-tag {
+      background: var(--surface-subtle);
+      color: var(--accent-gold);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+
+    .track-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .track-text strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    /* SERVICES SECTION */
+    .services-section {
+      padding: 80px 0;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .section-header {
+      margin-bottom: 44px;
+    }
+
+    .section-tag {
+      color: var(--accent-gold);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      padding: 40px;
+      border-radius: 12px;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      border-color: var(--border-highlight);
+      transform: translateY(-3px);
+    }
+
+    .card-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-gold);
+      margin-bottom: 14px;
+      display: inline-block;
+    }
+
+    .card-title {
+      font-size: 1.45rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+
+    .card-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+
+    .feature-list {
+      list-style: none;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      color: var(--accent-gold);
+      font-weight: bold;
+    }
+
+    .card-footer-link {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .card-footer-link:hover {
+      color: var(--accent-gold);
+    }
+
+    /* FOUNDER STRIP */
+    .founder-section {
+      padding: 80px 0;
+      border-top: 1px solid var(--border-subtle);
+      background: linear-gradient(180deg, var(--bg-dark) 0%, #0B1019 100%);
+    }
+
+    .founder-strip {
+      border: 1px solid var(--border-subtle);
+      background: var(--surface-card);
+      border-radius: 12px;
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .founder-meta {
+      border-right: 1px solid var(--border-subtle);
+      padding-right: 32px;
+    }
+
+    .founder-name {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }
+
+    .founder-title {
+      color: var(--accent-gold);
+      font-size: 0.925rem;
+      font-weight: 500;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .credentials-tag-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill-micro {
+      font-size: 0.75rem;
+      background: var(--surface-subtle);
+      border: 1px solid var(--border-subtle);
+      padding: 4px 10px;
+      border-radius: 4px;
+      color: var(--text-dim);
+    }
+
+    .founder-quote {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      padding: 80px 0;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .faq-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 900px;
+    }
+
+    .faq-card {
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 28px 32px;
+      transition: border-color 0.2s ease;
+    }
+
+    .faq-card:hover {
+      border-color: var(--border-highlight);
+    }
+
+    .faq-q {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .faq-q-mark {
+      color: var(--accent-gold);
+      font-size: 0.95rem;
+      font-family: monospace;
+    }
+
+    .faq-a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      padding-left: 24px;
+    }
+
+    /* BOTTOM BANNER */
+    .cta-banner {
+      padding: 70px 0;
+      border-top: 1px solid var(--border-subtle);
+      text-align: center;
+      background: radial-gradient(circle at center, #131c2a 0%, var(--bg-dark) 70%);
+    }
+
+    .cta-banner h2 {
+      font-family: var(--font-serif);
+      font-size: 2.75rem;
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .cta-banner p {
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto 32px;
+      font-size: 1.05rem;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 60px 0 40px;
+      font-size: 0.875rem;
+      color: var(--text-dim);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+
+    .footer-col h5 {
+      color: var(--text-primary);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a:hover {
+      color: var(--text-primary);
+    }
+
+    .disclaimer-bar {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 24px;
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: var(--text-dim);
+    }
+
+    @media (max-width: 860px) {
+      .audience-tracks {
+        grid-template-columns: 1fr;
+      }
+      .founder-strip {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 32px;
+      }
+      .founder-meta {
+        border-right: none;
+        border-bottom: 1px solid var(--border-subtle);
+        padding-right: 0;
+        padding-bottom: 24px;
+      }
+      .nav-links {
+        display: none;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="/" class="logo" aria-label="JurisOps Consulting Homepage">
+        <span class="logo-mark">J</span>
+        <span>JurisOps<span style="color: var(--accent-gold);">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/founders.html" style="color: var(--text-primary);">Startups &amp; Founders</a></li>
+        <li><a href="/legal-operations.html">Legal Operations</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="https://www.linkedin.com/in/jessehockenbury/recent-activity/articles/" target="_blank" rel="noopener noreferrer">Insights &rarr;</a></li>
+        <li><a href="/contact.html" class="btn-nav">Let's Talk</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Strategic Counsel &amp; Operational Architecture
+        </div>
+        <h1 class="hero-title">
+          Tailored legal architecture for <em>founders</em>.<br>
+          Operational velocity for <em>growing teams</em>.
+        </h1>
+        <p class="hero-subtitle">
+          JurisOps Consulting eliminates administrative and governance friction. Whether you need bespoke co-founder agreements, day-one incorporation, or modern automated contract workflows, we deliver strategic legal and operational solutions with predictable, accessible pricing.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="/contact" class="btn-primary">
+            Schedule Strategic Consultation
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+          <a href="#services" class="btn-secondary">Explore Practice Areas</a>
+        </div>
+
+        <!-- WHO WE SERVE BANNER -->
+        <div class="audience-tracks">
+          <div class="track-pill">
+            <span class="track-tag">For Founders</span>
+            <div class="track-text">
+              <strong>Launching a business?</strong> Get personalized entity formation, custom operating agreements, founder vesting, and bank onboarding with accessible, predictable scoping.
+            </div>
+          </div>
+          <div class="track-pill">
+            <span class="track-tag">For In-House Teams</span>
+            <div class="track-text">
+              <strong>Scaling operations?</strong> Streamline intake requests, modernize your CLM, audit outside counsel spend, and prove ROI with automated systems.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE SERVICES DUAL GRID -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Practices &amp; Capabilities</div>
+          <h2 class="section-title">Strategic guidance tailored to your stage.</h2>
+        </div>
+
+        <div class="grid-2">
+          <!-- Pillar 1: Startup Focus -->
+          <article class="card">
+            <div>
+              <span class="card-badge">Pillar I • Founders &amp; Early Stage</span>
+              <h3 class="card-title">Startup Formation &amp; Governance Architecture</h3>
+              <p class="card-desc">
+                Lay an institutional-grade foundation that protects founder equity and withstands investor due diligence. We pair strategic legal counsel with operational setup.
+              </p>
+              <ul class="feature-list">
+                <li>Turnkey entity formation (KY, OH, DE) &amp; state logistics</li>
+                <li>Customized operating agreements, bylaws &amp; founder vesting</li>
+                <li>Comprehensive IP assignment &amp; confidentiality frameworks</li>
+                <li>Cap table tool onboarding (Carta, Pulley, Gust)</li>
+                <li>Commercial banking setup &amp; corporate compliance calendar</li>
+              </ul>
+            </div>
+            <a href="/services/startup-foundation" class="card-footer-link">
+              Explore Founder Solutions &rarr;
+            </a>
+          </article>
+
+          <!-- Pillar 2: Corporate Focus -->
+          <article class="card">
+            <div>
+              <span class="card-badge">Pillar II • Growth &amp; Corporate</span>
+              <h3 class="card-title">Legal Operations &amp; Systems Engineering</h3>
+              <p class="card-desc">
+                Free internal teams from administrative bottlenecks. We engineer automated intake pipelines, integrate legal tech stacks, and deploy data dashboards that measure impact.
+              </p>
+              <ul class="feature-list">
+                <li>Intake triage &amp; automated matter routing systems</li>
+                <li>Contract lifecycle management (CLM) tech audits &amp; rollout</li>
+                <li>Outside counsel fee analysis &amp; vendor spend control</li>
+                <li>Executive SLA frameworks &amp; department KPI dashboards</li>
+                <li>Fractional Legal Operations leadership</li>
+              </ul>
+            </div>
+            <a href="/services/legal-operations" class="card-footer-link">
+              Explore Operations Solutions &rarr;
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER STRIP -->
+    <section class="founder-section">
+      <div class="container">
+        <div class="founder-strip">
+          <div class="founder-meta">
+            <div class="section-tag">Leadership</div>
+            <h3 class="founder-name">Jesse Hockenbury</h3>
+            <span class="founder-title">Founder &amp; Managing Director</span>
+            <div class="credentials-tag-group">
+              <span class="pill-micro">Legal Engineering</span>
+              <span class="pill-micro">Systems Architecture</span>
+              <span class="pill-micro">Strategic Advisory</span>
+            </div>
+          </div>
+          <div>
+            <p class="founder-quote">
+              "Founders and growing teams are often trapped between two extremes: rigid, unpredictable hourly billing from traditional firms, or generic DIY document generators that leave critical blind spots."
+            </p>
+            <p class="founder-quote" style="margin-bottom: 24px; font-size: 0.95rem;">
+              JurisOps bridges that gap. We deliver tailored legal documentation, thoughtful corporate architecture, and modern operational systems—grounded in practical business reality and transparent pricing.
+            </p>
+            <a href="/about" class="btn-secondary" style="display:inline-block; font-size:0.875rem; padding: 10px 18px;">
+              Read Founder Background &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (UPDATED FOR LEGAL CAPABILITY & FLEXIBLE PRICING) -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Clarity</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-grid">
+          <!-- FAQ 1 -->
+          <div class="faq-card">
+            <h4 class="faq-q"><span class="faq-q-mark">01.</span> I am an early-stage founder. Is JurisOps a fit for where I am right now?</h4>
+            <p class="faq-a">
+              Yes. We specifically partner with pre-seed, bootstrapped, and scaling founders to build an institutional-grade foundation early on. Rather than having to untangle messy equity splits, informal founder handshakes, or missing IP assignments later during due diligence, we ensure your entity and governing agreements are drafted properly from the start with accessible, practical scoping.
+            </p>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-card">
+            <h4 class="faq-q"><span class="faq-q-mark">02.</span> Can JurisOps draft legal documents and provide legal advice?</h4>
+            <p class="faq-a">
+              Yes. Unlike automated form-generation platforms, JurisOps provides strategic counsel and bespoke legal drafting—including customized operating agreements, bylaws, founder equity vesting, IP assignment agreements, and commercial contracts under a tailored engagement agreement. We do not provide courtroom litigation, allowing us to stay focused on transactional strategy, risk mitigation, and commercial execution.
+            </p>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-card">
+            <h4 class="faq-q"><span class="faq-q-mark">03.</span> Why choose JurisOps over DIY automated filers like Stripe Atlas or LegalZoom?</h4>
+            <p class="faq-a">
+              Automated platforms file basic paperwork and hand you generic boilerplate forms that often fail when co-founder disputes or investor diligence arise. JurisOps offers strategic, customized counsel: we guide you on entity type and jurisdiction (KY, OH, DE), draft tailored governance terms that reflect your true business deal, protect your intellectual property, and configure your banking and compliance infrastructure.
+            </p>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-card">
+            <h4 class="faq-q"><span class="faq-q-mark">04.</span> How does your pricing work?</h4>
+            <p class="faq-a">
+              We believe in accessible, predictable, and transparent pricing without the surprises of open-ended billable hours. Depending on your needs, we offer cost-effective project scopes, phased formation packages, or flexible advisory retainers designed to align with early-stage budgets.
+            </p>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-card">
+            <h4 class="faq-q"><span class="faq-q-mark">05.</span> Do I need to be located in Ohio or Kentucky?</h4>
+            <p class="faq-a">
+              While our firm is based in the Greater Cincinnati and Northern Kentucky corridor, our startup structuring, operational playbooks, and systems implementations support founders and corporate clients across the United States.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CALL TO ACTION -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Ready to build a cleaner foundation?</h2>
+        <p>Whether you're incorporating a new venture this month or modernizing your corporate operations, let's explore your roadmap.</p>
+        <a href="/contact" class="btn-primary">
+          Start the Conversation &rarr;
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo" style="margin-bottom: 14px;">
+            <span class="logo-mark">J</span>
+            <span>JurisOps Consulting</span>
+          </div>
+          <p style="color: var(--text-muted); line-height: 1.6; max-width: 380px;">
+            Strategic legal counsel, workflow automation, and venture-grade startup governance for ambitious organizations.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Offerings</h5>
+          <ul class="footer-links">
+            <li><a href="/services/startup-foundation">Founder Launch &amp; Formation</a></li>
+            <li><a href="/services/legal-operations">Legal Operations Engineering</a></li>
+            <li><a href="/services/clm-automation">Contract Workflow Automation</a></li>
+            <li><a href="/services/fractional-ops">Fractional Operations Advisory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="/about">About Founder</a></li>
+            <li><a href="/insights">Playbooks &amp; Articles</a></li>
+            <li><a href="/contact">Inquiry &amp; Intake</a></li>
+            <li><a href="/privacy">Privacy Notice</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="disclaimer-bar">
+        <p>
+          &copy; 2026 JurisOps Consulting LLC. All rights reserved. | 
+          <strong>Disclaimer:</strong> JurisOps Consulting provides business strategy, legal operations engineering, and transactional legal counsel. Formal legal counsel and document drafting are provided pursuant to an executed written engagement agreement. Litigation and court advocacy services are not offered.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
